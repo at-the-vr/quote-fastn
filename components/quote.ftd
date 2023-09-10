@@ -22,21 +22,30 @@ blur.px: 15
 
 
 
+-- ftd.length.responsive res:
+mobile.px: 220
+desktop.px: 600
+
+
+
 ;;  Q U O T E   C O M P O N E N T 
 
 -- component wrapper:
 caption title:
-caption avatar-src:
-caption person-name:
-caption person-description:
-caption background-color:
-
+string avatar-src:
+string person-name:
+string person-description:
+optional string background-color:
+optional integer width:
 ftd.type-data types: $roboto-mono-typography.types
+
+
 
 ;; Main quote container
 -- ftd.column:
 id: quote
-background.solid: $wrapper.background-color
+background.solid if { wrapper.background-color != NULL }: $wrapper.background-color
+background.solid: #1d222a
 border-radius.px: 10
 padding.px: 40
 overflow: hidden
@@ -57,7 +66,9 @@ opacity: 0.1
 -- ftd.text: $wrapper.title
 color: #eeeeee
 role: $inherited.types.copy-regular
-width.fixed.px: 600
+;; width.fixed.px if { wrapper.width != NULL }: $wrapper.width
+;; width.fixed.px: 600
+width.fixed: $res
 z-index: 1
 style: italic
 
