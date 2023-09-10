@@ -1,6 +1,7 @@
--- import: fifthtry.github.io/doc-site as ds
--- import: fastn-community.github.io/winter-cs
--- import: fastn-community.github.io/roboto-mono-typography
+;; -- import: fifthtry.github.io/doc-site as ds
+;; -- import: fastn-community.github.io/winter-cs
+;; -- import: fastn-community.github.io/roboto-mono-typography
+;; -- import: ayushsoni1010.github.io/button-component-challenge/components/button as button
 
 
 ;;  L I N E A R  G R A D I E N T S
@@ -10,124 +11,6 @@
 ;; colors: $color-values 
 
 ;; E N D   L I N E A R  G R A D I E N T S
-
-
-;;  S H A D O W S
-
--- ftd.shadow quote-shadow: 
-color: rgba(0, 0, 0, 0.35)
-x-offset.px: 0 
-y-offset.px: 5 
-blur.px: 15
-
-;; E N D   S H A D O W S
-
-
-
-;;  Q U O T E   C O M P O N E N T 
-
--- component quote:
-caption title:
-caption avatar-src:
-caption person-name:
-caption person-description:
-caption background-color:
-
-ftd.type-data types: $roboto-mono-typography.types
-
-;; Main quote container
--- ftd.column:
-id: quote
-background.solid: $quote.background-color
-border-radius.px: 10
-padding.px: 40
-overflow: hidden
-shadow: $quote-shadow
-
-;; Background quote image
--- ftd.image:
-src: $assets.files.assets.images.quote_bg.svg
-anchor.id: quote
-height.fixed.px: 220
-width.fixed.px: 220
-top.calc: 100% - 80%
-left.calc: 100% - 68%
-z-index: 0
-opacity: 0.1
-
-;; Quote title
--- ftd.text: $quote.title
-color: #eeeeee
-role: $inherited.types.copy-regular
-width.fixed.px: 600
-z-index: 1
-style: italic
-
-;; Quote person container
--- ftd.row:
-
-;; Quote icon with avatar
--- ftd.row:
-id: quote-icon-with-avatar
-margin-top.px: 40
-
--- ftd.image:
-anchor.id: quote-icon-with-avatar
-left.px: -20
-src: $assets.files.assets.images.quote_icon.svg
-background.solid: #1d222a
-border-radius.px: 10
-
--- ftd.image:
-src: $quote.avatar-src
-height.fixed.px: 100
-width.fixed.px: 100
-border-radius.percent: 100
-
--- end: ftd.row
-;; end of Quote icon with avatar
-
-;; Quote person name and description
--- ftd.column:
-margin-top.px: 60
-margin-left.px: 40
-
-;; Quote person name
--- ftd.text: $quote.person-name
-color: #eeeeee
-style: bold
-role: $inherited.types.heading-small
-
-;; Quote person description
--- ftd.text: $quote.person-description
-margin-top.px: 5
-color: #eeeeee
-style: italic
-role: $inherited.types.copy-regular
-
--- end: ftd.column
-;; end of Quote person name and description
-
-;; Dots image
--- ftd.image:
-src: $assets.files.assets.images.dots.png
-anchor.id: quote
-height.fixed.px: 140
-width.fixed.px: 140
-bottom.px: -47
-right.px: -47
-
--- end: ftd.row
-;; end of Quote person container
-
--- end: ftd.column
-;; end of Main quote container
-
--- end: quote
-
-;;  E N D   Q U O T E   C O M P O N E N T
-
-
 
 ;;  M A I N   P A G E 
 
@@ -142,6 +25,7 @@ width: fill-container
 -- ftd.image:
 ;; src: https://w0.peakpx.com/wallpaper/228/775/HD-wallpaper-starry-sky-glow-art-dark-lake-reflection.jpg
 src: $assets.files.assets.images.bg.png
+;; blur.px: 10
 anchor.id: main-page
 top.px: 0
 left.px: 0
