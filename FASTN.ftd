@@ -1,11 +1,13 @@
 -- import: fastn
 
 -- fastn.package: apneduniya.github.io/quote-fastn
-favicon: /-/apneduniya.github.io/quote-fastn/favicon.ico
+favicon: /-/apneduniya.github.io/quote-fastn//assets/images/quote_icon.svg
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/roboto-typography
+
+-- fastn.dependency: fastn-community.github.io/roboto-mono-typography
 
 -- fastn.auto-import: apneduniya.github.io/quote-fastn/FASTN/ds
 -- fastn.auto-import: apneduniya.github.io/quote-fastn/assets
