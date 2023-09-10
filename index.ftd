@@ -11,19 +11,23 @@
 id: main-page
 align-content: center
 height: fill-container
+;; height.fixed.percent: 100
 width: fill-container
 ;; background.solid: #222831
 
 ;; Background image of main page
 -- ftd.image:
+fit: cover
+;; sticky: true
 ;; src: https://w0.peakpx.com/wallpaper/228/775/HD-wallpaper-starry-sky-glow-art-dark-lake-reflection.jpg
 src: $assets.files.assets.images.bg.png
 ;; blur.px: 10
-anchor.id: main-page
+;; anchor.id: main-page
+anchor: window
 top.px: 0
 left.px: 0
 height: fill-container
-width: fill-container
+;; width: fill-container
 
 -- ftd.column:
 align-self: center
