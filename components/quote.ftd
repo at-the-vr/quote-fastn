@@ -1,9 +1,18 @@
 -- import: fastn-community.github.io/roboto-mono-typography
 
+;;  L I N E A R  G R A D I E N T S
+
+;; -- ftd.linear-gradient bg: 
+;; direction: top-bottom 
+;; colors: $color-values 
+
+;; E N D   L I N E A R  G R A D I E N T S
+
+
 
 ;;  S H A D O W S
 
--- ftd.shadow quote-shadow: 
+-- ftd.shadow wrapper-shadow: 
 color: rgba(0, 0, 0, 0.35)
 x-offset.px: 0 
 y-offset.px: 5 
@@ -15,7 +24,7 @@ blur.px: 15
 
 ;;  Q U O T E   C O M P O N E N T 
 
--- component quote:
+-- component wrapper:
 caption title:
 caption avatar-src:
 caption person-name:
@@ -27,11 +36,11 @@ ftd.type-data types: $roboto-mono-typography.types
 ;; Main quote container
 -- ftd.column:
 id: quote
-background.solid: $quote.background-color
+background.solid: $wrapper.background-color
 border-radius.px: 10
 padding.px: 40
 overflow: hidden
-shadow: $quote-shadow
+shadow: $wrapper-shadow
 
 ;; Background quote image
 -- ftd.image:
@@ -45,7 +54,7 @@ z-index: 0
 opacity: 0.1
 
 ;; Quote title
--- ftd.text: $quote.title
+-- ftd.text: $wrapper.title
 color: #eeeeee
 role: $inherited.types.copy-regular
 width.fixed.px: 600
@@ -68,7 +77,7 @@ background.solid: #1d222a
 border-radius.px: 10
 
 -- ftd.image:
-src: $quote.avatar-src
+src: $wrapper.avatar-src
 height.fixed.px: 100
 width.fixed.px: 100
 border-radius.percent: 100
@@ -82,13 +91,13 @@ margin-top.px: 60
 margin-left.px: 40
 
 ;; Quote person name
--- ftd.text: $quote.person-name
+-- ftd.text: $wrapper.person-name
 color: #eeeeee
 style: bold
 role: $inherited.types.heading-small
 
 ;; Quote person description
--- ftd.text: $quote.person-description
+-- ftd.text: $wrapper.person-description
 margin-top.px: 5
 color: #eeeeee
 style: italic
@@ -118,6 +127,6 @@ right.px: -47
 -- end: ftd.column
 ;; end of Main quote container
 
--- end: quote
+-- end: wrapper
 
 ;;  E N D   Q U O T E   C O M P O N E N T
