@@ -1,14 +1,16 @@
 -- import: fastn
 
--- fastn.package: <user_name>.github.io/<repo_name>
-favicon: /-/<user_name>.github.io/<repo_name>/favicon.ico
+-- fastn.package: apneduniya.github.io/quote-fastn
+favicon: /-/apneduniya.github.io/quote-fastn//assets/images/quote_icon.svg
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/roboto-typography
 
--- fastn.auto-import: <user_name>.github.io/<repo_name>/FASTN/ds
--- fastn.auto-import: <user_name>.github.io/<repo_name>/assets
+-- fastn.dependency: fastn-community.github.io/roboto-mono-typography
+
+-- fastn.auto-import: apneduniya.github.io/quote-fastn/FASTN/ds
+-- fastn.auto-import: apneduniya.github.io/quote-fastn/assets
 -- fastn.auto-import: doc-site
 
 -- fastn.sitemap:
