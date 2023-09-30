@@ -64,7 +64,7 @@ opacity: 0.1
 
 ;; Quote title
 -- ftd.text: $wrapper.title
-color: #eeeeee
+color: #FF5423
 role: $inherited.types.copy-regular
 ;; width.fixed.px if { wrapper.width != NULL }: $wrapper.width
 ;; width.fixed.px: 600
@@ -103,14 +103,14 @@ margin-left.px: 40
 
 ;; Quote person name
 -- ftd.text: $wrapper.person-name
-color: #eeeeee
+color: #FF5423
 style: bold
 role: $inherited.types.heading-small
 
 ;; Quote person description
 -- ftd.text: $wrapper.person-description
 margin-top.px: 5
-color: #eeeeee
+color: #FF5423
 style: italic
 role: $inherited.types.copy-regular
 

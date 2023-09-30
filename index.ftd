@@ -20,14 +20,14 @@ width: fill-container
 fit: cover
 ;; sticky: true
 ;; src: https://w0.peakpx.com/wallpaper/228/775/HD-wallpaper-starry-sky-glow-art-dark-lake-reflection.jpg
-src: $assets.files.assets.images.bg.png
+src: $assets.files.assets.images.haikyu.jpg
 ;; blur.px: 10
 ;; anchor.id: main-page
 anchor: window
 top.px: 0
 left.px: 0
 height: fill-container
-;; width: fill-container
+width: fill-container
 
 -- ftd.column:
 align-self: center
@@ -35,11 +35,11 @@ align-self: center
 -- quote.wrapper:
 ;; title: Lorem ipsum dolor sit amet, consectetur adipiscing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ;; Write 5-10 lines of quote here related to coding
-title: "Coding is the art of turning ideas into reality. It's a craft that requires patience, persistence, and a willingness to learn. With each line of code, we have the power to create something new, something that can change the world. But with that power comes great responsibility. We must strive to write code that is efficient, secure, and accessible to all. And we must never forget that behind every line of code is a human being, with hopes, dreams, and a desire to make a difference."
-avatar-src: https://avatars.githubusercontent.com/u/113763427
-person-name: Adarsh Gupta
-person-description: Full Stack Developer
-background-color: #1d222a
+title: "There are plenty of people in this world who we could never stand up to. But... if you think that they were talented from the very beginning, then that just means you've given up and lost before you even faced them... and its rude"
+avatar-src: https://i.redd.it/1scxjozd4x161.jpg
+person-name: Shinsuke Kita
+person-description: Captain Inarizaki VB Team
+background-color: #F8D9C0
 
 -- end: ftd.column
 
